@@ -1,0 +1,12 @@
+.no-color {
+  color: #64748b;
+  height: 15px;
+  width: 50%;
+  margin-right: 0px;
+}
+.active-color {
+  color: #2563eb;
+  height: 15px;
+  width: 50%;
+  margin-right: 0px;
+}

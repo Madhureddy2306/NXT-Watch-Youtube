@@ -1,0 +1,242 @@
+.login-page {
+  background-color: #ffffff;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.login-page-dark {
+  background-color: #383838;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.login-card {
+  width: 40%;
+  height: 60%;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px #94a3b8;
+  border-radius: 8px;
+  box-shadow: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+}
+.login-card-dark {
+  width: 40%;
+  height: 60%;
+  background-color: #181818;
+  border-radius: 8px;
+  box-shadow: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+}
+.website-logo {
+  width: 40%;
+  margin-top: 0px;
+  margin-bottom: 5%;
+}
+.label {
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.label-dark {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.user-input {
+  width: 95%;
+  height: 12%;
+  border-radius: 4px;
+  outline: none;
+  outline-width: 0px;
+  border: solid 1px #94a3b8;
+  padding-left: 1.5%;
+  margin-bottom: 3%;
+  font-size: 16px;
+}
+.user-input-dark {
+  width: 95%;
+  height: 12%;
+  border-radius: 4px;
+  outline: none;
+  outline-width: 0px;
+  border: solid 1px #00306e;
+  padding-left: 1.5%;
+  margin-bottom: 3%;
+  font-size: 16px;
+}
+.label-div {
+  width: 96%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box {
+  height: 15px;
+  width: 15px;
+}
+.show-pass {
+  color: #181818;
+  font-size: 14px;
+}
+.show-pass-dark {
+  color: #f9f9f9;
+  font-size: 14px;
+}
+.login-btn {
+  background-color: #4f46e5;
+  height: 40px;
+  border-width: 0px;
+  border-radius: 5px;
+  width: 97%;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 2.5%;
+  cursor: pointer;
+}
+.error {
+  color: #ff0000;
+  font-size: 15px;
+  margin: 1px 1px 1px 2%;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 576px) {
+  .login-card {
+    width: 100%;
+  }
+  .login-card-dark {
+    width: 100%;
+  }
+  .website-logo {
+    width: 45%;
+    height: 10%;
+  }
+  .label {
+    font-size: 18px;
+  }
+  .error {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .login-card {
+    width: 90%;
+  }
+  .login-card-dark {
+    width: 90%;
+  }
+  .website-logo {
+    width: 45%;
+    height: 12%;
+  }
+  .user-input {
+    font-size: 20px;
+  }
+  .user-input-dark {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 20px;
+  }
+  .error {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 996px) {
+  .login-card {
+    width: 90%;
+  }
+  .login-card-dark {
+    width: 90%;
+  }
+  .website-logo {
+    width: 45%;
+    height: 12%;
+  }
+  .user-input {
+    font-size: 22px;
+  }
+  .user-input-dark {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 20px;
+  }
+  .error {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 996px) and (max-width: 1200px) {
+  .login-card {
+    width: 45%;
+  }
+  .login-card-dark {
+    width: 90%;
+  }
+  .website-logo {
+    width: 45%;
+    height: 12%;
+  }
+  .user-input {
+    font-size: 22px;
+  }
+  .user-input-dark {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 20px;
+  }
+  .error {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .login-card {
+    width: 46%;
+  }
+  .login-card-dark {
+    width: 90%;
+  }
+  .website-logo {
+    width: 45%;
+    height: 15%;
+  }
+  .user-input {
+    font-size: 22px;
+  }
+  .user-input-dark {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 18px;
+  }
+  .error {
+    font-size: 14px;
+  }
+}
