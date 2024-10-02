@@ -1,0 +1,33 @@
+.close-icon {
+  cursor: pointer;
+  outline: none;
+}
+
+.close-icon:hover {
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.search-icon {
+  width: 90%;
+  height: 90%;
+  color: #475569;
+}
+.loader-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.link {
+  width: 100%;
+  text-decoration-color: transparent;
+  height: 5%;
+}
+
+@media (max-width: 576px) {
+  .select-color {
+    display: none;
+  }
+}

@@ -1,0 +1,122 @@
+import Styled from 'styled-components'
+
+export const GamingDiv = Styled.div`
+    height:100vh;
+    width:100%;
+    background-color:${props => (props.bgColor ? '#0f0f0f ' : '#f9f9f9')};
+    font-family:"Roboto";
+    margin:0px;
+`
+export const BottomDiv = Styled.div`
+    height:90vh;
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    background-color:transparent;
+`
+export const RightBar = Styled.div`
+    width:100%;
+    height:100%;
+    background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
+`
+export const RightDiv = Styled.div`
+    width:100%;
+    height:100%;
+    background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
+`
+
+export const GamingHeadingDiv = Styled.div`
+    width:100%;
+    background-color:${props => (props.bgColor ? '#010101' : '#d7dfe9')};
+    height:15%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+`
+export const GamingIconDiv = Styled.div`
+    background-color:${props => (props.bgColor ? '#d7dfe9' : 'lightcyan')};
+    height:70%;
+    width:8%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    border-radius:50%;
+    margin-right:3%;
+`
+
+export const GamingH1 = Styled.h1`
+    color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};
+    font-size:26px;
+`
+export const FailDiv = Styled.div`
+  height: 90vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family:"Roboto";
+  background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
+`
+export const FailImg = Styled.img`
+    width:40%;
+    height:50%;
+    margin-top:3%;
+`
+export const FailH1 = Styled.h1`
+    color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};
+    font-size:28px;
+    margin-top:5px;
+    margin-bottom:5px;
+`
+
+export const Failpara = Styled.p`
+    color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};
+    font-size:16px;
+`
+export const RetryBtn = Styled.button`
+    background-color:#3b82f6;
+    height:35px;
+    width:70px;
+    border-width:0px;
+    border-radius:5px;
+    color:#f8f8f8;
+    cursor:pointer;
+    font-weight:500;
+`
+export const GameDisplayDiv = Styled.ul`
+    list-style-type:none;
+    padding-left:0px;
+    width:100%;
+    height:85%;
+    padding:1%;
+    overflow-y:scroll;
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap:wrap;
+`
+export const GameCard = Styled.div`
+    width:240px;
+    height:65%;
+    padding:1.5%;
+    margin-bottom:1.5%;
+`
+export const GameImg = Styled.img`
+    width:100%;
+    height:80%;
+`
+export const Title = Styled.p`
+    color:${props => (props.isDark ? '#f9f9f9' : '#010101')};
+    font-size:14px;
+    font-weight:500;
+    margin-bottom:2px;
+    margin-top:2px;
+`
+export const Title1 = Styled.p`
+    color: #475569;
+    font-size:14px;
+    font-weight:500;
+    margin:0px;
+`

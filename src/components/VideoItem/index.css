@@ -1,0 +1,19 @@
+.link-me {
+  width: 33%;
+  background-color: transparent;
+  padding: 2px;
+  margin-bottom: 1%;
+  text-decoration-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .link-me {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 968px) {
+  .link-me {
+    width: 50%;
+  }
+}
