@@ -9,11 +9,15 @@ export const SideBarDiv = Styled.div`
     @media (max-width:700px){
         display:none;
     }
+
+    @media (min-width:700px) and (max-width:980px){
+        width:20%;
+    }
 `
 export const CategoriesDiv = Styled.div`
     background-color:${props => (props.bgColor ? '#181818' : '#f8f8f8')};
     width:100%;
-    height:70%;
+    height:80%;
     display:flex;
     justify-content:flex-start;
     flex-direction:column;
@@ -35,16 +39,33 @@ export const CategoryItem = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#181818')};
     font-size:14px;
     font-weight:500;
-    margin-left:5%;
+    margin:0%;
+    padding-left:2%;
 
-    @media (max-width:576px){
+    @media (max-width:600px){
         font-size:10px;
+    }
+
+    @media (min-width:600px) and (max-width:780px){
+        font-size:14px;
+    }
+
+    @media (min-width:780px) and (max-width:960px){
+        font-size:16px;
+    }
+
+    @media (min-width:960px) and (max-width:1200px){
+        font-size:18px;
+    }
+
+    @media (min-width:1200px){
+        font-size:20px;
     }
 `
 export const ContactCard = Styled.div`
     background-color:${props => (props.bgColor ? '#181818' : '#f8f8f8')};
     width:100%;
-    height:30%;
+    height:20%;
     padding:2%;
     display:flex;
     justify-content:flex-start;

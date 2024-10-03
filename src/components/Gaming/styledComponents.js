@@ -8,19 +8,20 @@ export const GamingDiv = Styled.div`
     margin:0px;
 `
 export const BottomDiv = Styled.div`
-    height:85%;
+    height:83%;
     width:100%;
     display:flex;
     justify-content:flex-start;
     background-color:transparent;
 `
 export const RightBar = Styled.div`
-    width:75%;
+    width:80%;
     height:100%;
     background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
 
     @media (max-width:700px){
         width:100%;
+        height:90%;
     }
 `
 export const RightDiv = Styled.div`
@@ -93,7 +94,7 @@ export const GameDisplayDiv = Styled.ul`
     list-style-type:none;
     padding-left:0px;
     width:100%;
-    height:90%;
+    height:100%;
     padding:1%;
     overflow-y:auto;
     display:flex;
@@ -109,7 +110,7 @@ export const GameCard = Styled.div`
     margin-bottom:1.5%;
 `
 export const GameImg = Styled.img`
-    height:65%;
+    height:75%;
     width:100%;
     background-size:cover;
 `
@@ -117,8 +118,8 @@ export const Title = Styled.p`
     color:${props => (props.isDark ? '#f9f9f9' : '#010101')};
     font-size:16px;
     font-weight:500;
-    margin-bottom:2px;
-    margin-top:2px;
+    margin-bottom:2%;
+    margin-top:2%;
 `
 export const Title1 = Styled.p`
     color: #475569;

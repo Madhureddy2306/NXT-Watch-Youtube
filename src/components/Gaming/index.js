@@ -42,7 +42,7 @@ const categoriesList = [
     optionId: 'gaming',
   },
   {
-    displayText: 'Saved Videos',
+    displayText: 'Saved',
     optionId: 'saved videos',
   },
 ]

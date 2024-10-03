@@ -9,26 +9,20 @@ export const HomeDiv = Styled.div`
 `
 export const BottomDiv = Styled.div`
     width:100%;
-    height:85%;
+    height:83%;
     display:flex;
     justify-content:flex-start;
     overflow:auto;
-`
-export const CategoryItem = Styled.p`
-    color:${props => (props.isDark ? '#f8f8f8' : '#181818')};
-    font-size:14px;
-    font-weight:500;
-    margin-left:5%;
 
-    @media (max-width:600px){
-        font-size:10px;
+    @media (min-width:700px){
+        height:100%;
     }
 `
 
 export const RightBar = Styled.div`
     background-color:${props => (props.bgColor ? '#181818' : '#f8f8f8')};
     background-color:transparent;
-    width:75%;
+    width:80%;
     height:100%;
     overflow-y:auto;
     padding-top:0px;

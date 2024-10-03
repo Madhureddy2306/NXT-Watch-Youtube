@@ -10,7 +10,7 @@ const MobileNavBar = props => {
   const {isDarkTheme, selectedOption, categoriesList, getUrlText} = props
   const iconCss = isDarkTheme ? 'yes' : ''
 
-  const sendText = event => {
+  const sendTextId = event => {
     if (getUrlText !== undefined) {
       getUrlText(event)
     }
@@ -20,7 +20,9 @@ const MobileNavBar = props => {
     <MobileBarDiv bgColor={isDarkTheme}>
       <Link to="/" className="link-nav">
         <NavListItem
-          className={selectedOption === categoriesList[0].optionId ? 'bg' : ''}
+          className={
+            selectedOption === categoriesList[0].optionId ? 'bg-nav' : ''
+          }
         >
           <AiFillHome
             className={
@@ -32,7 +34,7 @@ const MobileNavBar = props => {
           <NavCategoryItem
             id={categoriesList[0].optionId}
             isDark={isDarkTheme}
-            onClick={sendText}
+            onClick={sendTextId}
           >
             {categoriesList[0].displayText}
           </NavCategoryItem>
@@ -40,7 +42,9 @@ const MobileNavBar = props => {
       </Link>
       <Link to="/trending" className="link-nav">
         <NavListItem
-          className={selectedOption === categoriesList[1].optionId ? 'bg' : ''}
+          className={
+            selectedOption === categoriesList[1].optionId ? 'bg-nav' : ''
+          }
         >
           <HiFire
             className={
@@ -52,7 +56,7 @@ const MobileNavBar = props => {
           <NavCategoryItem
             id={categoriesList[1].optionId}
             isDark={isDarkTheme}
-            onClick={sendText}
+            onClick={sendTextId}
           >
             {categoriesList[1].displayText}
           </NavCategoryItem>
@@ -74,7 +78,7 @@ const MobileNavBar = props => {
           <NavCategoryItem
             id={categoriesList[2].optionId}
             isDark={isDarkTheme}
-            onClick={sendText}
+            onClick={sendTextId}
           >
             {categoriesList[2].displayText}
           </NavCategoryItem>
@@ -96,7 +100,7 @@ const MobileNavBar = props => {
           <NavCategoryItem
             id={categoriesList[3].optionId}
             isDark={isDarkTheme}
-            onClick={sendText}
+            onClick={sendTextId}
           >
             {categoriesList[3].displayText}
           </NavCategoryItem>

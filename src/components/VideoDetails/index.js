@@ -7,7 +7,7 @@ import {AiOutlineLike, AiOutlineDislike} from 'react-icons/ai'
 import {RiMenuAddFill} from 'react-icons/ri'
 import ThemeContext from '../../ThemeContext'
 import Header from '../Header'
-import SideBar from '../SideBar'
+import MobileNavBar from '../MobileNavbar'
 import './index.css'
 import {
   VideoDetailsDiv,
@@ -35,6 +35,25 @@ import {
   ChannelName1,
   DescP,
 } from './styledComponents'
+
+const categoriesList = [
+  {
+    displayText: 'Home',
+    optionId: 'home',
+  },
+  {
+    displayText: 'Trending',
+    optionId: 'trending',
+  },
+  {
+    displayText: 'Gaming',
+    optionId: 'gaming',
+  },
+  {
+    displayText: 'Saved',
+    optionId: 'saved videos',
+  },
+]
 
 class VideoDetails extends Component {
   state = {
@@ -227,6 +246,7 @@ class VideoDetails extends Component {
 
   render() {
     const {requestFailed, isLoading, activeOption, videoInfo} = this.state
+    console.log(activeOption)
 
     return (
       <ThemeContext.Consumer>
@@ -254,7 +274,6 @@ class VideoDetails extends Component {
             >
               <Header />
               <BottomDiv>
-                <SideBar isDarkTheme={isDarkTheme} />
                 <VideoPlayerDiv bgColor={isDarkTheme}>
                   {isLoading ? (
                     this.renderLoader(isDarkTheme)
@@ -274,6 +293,11 @@ class VideoDetails extends Component {
                   )}
                 </VideoPlayerDiv>
               </BottomDiv>
+              <MobileNavBar
+                isDarkTheme={isDarkTheme}
+                selectedOption=""
+                categoriesList={categoriesList}
+              />
             </VideoDetailsDiv>
           )
         }}

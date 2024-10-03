@@ -2,7 +2,7 @@ import Styled from 'styled-components'
 
 export const MobileBarDiv = Styled.nav`
     width:100%;
-    height:5%;
+    height:7%;
     background-color:${props => (props.bgColor ? '#181818' : '#f8f8f8')};
     display:flex;
     justify-content:space-between;
@@ -22,7 +22,7 @@ export const NavListItem = Styled.li`
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:50px;
+    border-radius:52px;
 `
 export const NavCategoryItem = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#181818')};
@@ -30,6 +30,6 @@ export const NavCategoryItem = Styled.p`
     font-weight:500;
 
     @media (max-width:600px){
-        font-size:0.6rem;
+        font-size:0.7rem;
     }
 `

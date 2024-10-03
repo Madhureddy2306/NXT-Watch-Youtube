@@ -43,7 +43,7 @@ const categoriesList = [
     optionId: 'gaming',
   },
   {
-    displayText: 'Saved Videos',
+    displayText: 'Saved',
     optionId: 'saved videos',
   },
 ]
@@ -52,7 +52,7 @@ class Home extends Component {
   state = {
     allVideos: '',
     searchInput: '',
-    selectedOption: 'home',
+    selectedOption: categoriesList[0].optionId,
     isLoading: true,
     showEmpty: false,
     requestFailed: false,
@@ -143,6 +143,7 @@ class Home extends Component {
   }
 
   getUrlText = event => {
+    console.log(event.target.id)
     this.setState({selectedOption: event.target.id})
   }
 

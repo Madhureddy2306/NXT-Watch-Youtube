@@ -7,14 +7,14 @@ export const GamingDiv = Styled.div`
     font-family:"Roboto";
 `
 export const BottomDiv = Styled.div`
-    height:85%;
+    height:83%;
     width:100%;
     display:flex;
     justify-content:flex-start;
     background-color:transparent;
 `
 export const RightBar = Styled.div`
-    width:75%;
+    width:80%;
     height:100%;
     background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
 
