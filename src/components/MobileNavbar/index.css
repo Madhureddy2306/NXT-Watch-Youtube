@@ -1,0 +1,19 @@
+.category-icon-nav {
+  color: #475569;
+  height: 45%;
+}
+.yes-nav {
+  color: #f8f8f8;
+}
+.bg-nav {
+  background-color: lightslategray;
+}
+.link-nav {
+  width: 24%;
+  height: 90%;
+  text-decoration-color: transparent;
+}
+.select-color-nav {
+  color: #ff0000;
+  height: 45%;
+}

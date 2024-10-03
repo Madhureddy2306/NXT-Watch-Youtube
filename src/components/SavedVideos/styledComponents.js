@@ -2,20 +2,25 @@ import Styled from 'styled-components'
 
 export const GamingDiv = Styled.div`
     height:100vh;
+    width:100vw;
     background-color:${props => (props.bgColor ? '#0f0f0f ' : '#f9f9f9')};
     font-family:"Roboto";
 `
 export const BottomDiv = Styled.div`
-    height:90vh;
+    height:85%;
     width:100%;
     display:flex;
     justify-content:flex-start;
     background-color:transparent;
 `
 export const RightBar = Styled.div`
-    width:100%;
+    width:75%;
     height:100%;
     background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
+
+    @media (max-width:700px){
+        width:100%;
+    }
 `
 export const RightDiv = Styled.div`
     width:100%;
@@ -48,7 +53,7 @@ export const GamingH1 = Styled.h1`
     font-size:26px;
 `
 export const FailDiv = Styled.div`
-  height: 90vh;
+  height: 100%;
   width:100%;
   display: flex;
   justify-content: center;

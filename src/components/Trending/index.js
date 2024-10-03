@@ -7,6 +7,7 @@ import {HiFire} from 'react-icons/hi'
 import ThemeContext from '../../ThemeContext'
 import Header from '../Header'
 import SideBar from '../SideBar'
+import MobileNavBar from '../MobileNavbar'
 import './index.css'
 import {
   TrendingDiv,
@@ -216,6 +217,12 @@ class Trending extends Component {
                   )}
                 </RightBar>
               </BottomDiv>
+              <MobileNavBar
+                isDarkTheme={isDarkTheme}
+                selectedOption={selectedOption}
+                categoriesList={categoriesList}
+                getUrlText={this.getUrlText}
+              />
             </TrendingDiv>
           )
         }}

@@ -7,11 +7,10 @@ export const TrendingDiv = Styled.div`
     font-family:"Roboto";
 `
 export const BottomDiv = Styled.div`
-    height:90vh;
+    height:85%;
     width:100%;
     display:flex;
     justify-content:flex-start;
-    background-color:red;
 `
 
 export const FailDiv = Styled.div`
@@ -57,7 +56,7 @@ export const VideoPlayerDiv = Styled.div`
 `
 export const RightBar = Styled.div`
     background-color:${props => (props.bgColor ? '#181818' : '#f8f8f8')};
-    width:100%;
+    width:75%;
     height:100%;
     overflow-y:auto;
 

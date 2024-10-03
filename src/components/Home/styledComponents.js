@@ -9,9 +9,10 @@ export const HomeDiv = Styled.div`
 `
 export const BottomDiv = Styled.div`
     width:100%;
-    height:90vh;
+    height:85%;
     display:flex;
     justify-content:flex-start;
+    overflow:auto;
 `
 export const CategoryItem = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#181818')};
@@ -28,7 +29,7 @@ export const RightBar = Styled.div`
     background-color:${props => (props.bgColor ? '#181818' : '#f8f8f8')};
     background-color:transparent;
     width:75%;
-    height:90vh;
+    height:100%;
     overflow-y:auto;
     padding-top:0px;
 
@@ -52,7 +53,7 @@ export const BannerImgDiv = Styled.div`
     }
 `
 export const BuyDiv = Styled.div`
-    width:40%;
+    width:50%;
     height:100%;
     display:flex;
     justify-content:space-evenly;
@@ -66,15 +67,15 @@ export const BannerLogo = Styled.img`
 `
 export const GetPara = Styled.p`
     color:#181818;
-    font-size:1rem;
+    font-size:0.8rem;
     font-weight:500;
     margin-bottom:5px;
     margin-top:5px;
 `
 export const GetBtn = Styled.button`
-    height:35px;
+    height:30px;
     padding:5px;
-    width:90px;
+    width:40%;
     background-color:transparent;
     border-color:#181818;
     color:#181818;

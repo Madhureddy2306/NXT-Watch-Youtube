@@ -5,6 +5,7 @@ import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import VideoItem from '../VideoItem'
 import SideBar from '../SideBar'
+import MobileNavBar from '../MobileNavbar'
 import ThemeContext from '../../ThemeContext/index'
 import {
   HomeDiv,
@@ -239,6 +240,12 @@ class Home extends Component {
                   )}
                 </RightBar>
               </BottomDiv>
+              <MobileNavBar
+                isDarkTheme={isDarkTheme}
+                selectedOption={selectedOption}
+                categoriesList={categoriesList}
+                getUrlText={this.getUrlText}
+              />
             </HomeDiv>
           )
         }}

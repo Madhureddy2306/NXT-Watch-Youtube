@@ -6,6 +6,7 @@ import {SiYoutubegaming} from 'react-icons/si'
 import ThemeContext from '../../ThemeContext'
 import Header from '../Header'
 import SideBar from '../SideBar'
+import MobileNavBar from '../MobileNavbar'
 import './index.css'
 import {
   GamingDiv,
@@ -83,8 +84,7 @@ class SavedVideos extends Component {
     return (
       <ThemeContext.Consumer>
         {value => {
-          const {isDarkTheme, savedList, savedId} = value
-          console.log(savedId)
+          const {isDarkTheme, savedList} = value
 
           return (
             <GamingDiv bgColor={isDarkTheme} data-testid="savedVideos">
@@ -163,6 +163,12 @@ class SavedVideos extends Component {
                   )}
                 </RightBar>
               </BottomDiv>
+              <MobileNavBar
+                isDarkTheme={isDarkTheme}
+                selectedOption={selectedOption}
+                categoriesList={categoriesList}
+                getUrlText={this.getUrlText}
+              />
             </GamingDiv>
           )
         }}

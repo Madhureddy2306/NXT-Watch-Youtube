@@ -6,6 +6,7 @@ import {SiYoutubegaming} from 'react-icons/si'
 import ThemeContext from '../../ThemeContext'
 import Header from '../Header'
 import SideBar from '../SideBar'
+import MobileNavBar from '../MobileNavbar'
 import './index.css'
 import {
   GamingDiv,
@@ -176,6 +177,12 @@ class Gaming extends Component {
                   )}
                 </RightBar>
               </BottomDiv>
+              <MobileNavBar
+                isDarkTheme={isDarkTheme}
+                selectedOption={selectedOption}
+                categoriesList={categoriesList}
+                getUrlText={this.getUrlText}
+              />
             </GamingDiv>
           )
         }}

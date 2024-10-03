@@ -2,22 +2,26 @@ import Styled from 'styled-components'
 
 export const GamingDiv = Styled.div`
     height:100vh;
-    width:100%;
+    width:100vw;
     background-color:${props => (props.bgColor ? '#0f0f0f ' : '#f9f9f9')};
     font-family:"Roboto";
     margin:0px;
 `
 export const BottomDiv = Styled.div`
-    height:90vh;
+    height:85%;
     width:100%;
     display:flex;
     justify-content:flex-start;
     background-color:transparent;
 `
 export const RightBar = Styled.div`
-    width:100%;
+    width:75%;
     height:100%;
     background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
+
+    @media (max-width:700px){
+        width:100%;
+    }
 `
 export const RightDiv = Styled.div`
     width:100%;
@@ -28,7 +32,7 @@ export const RightDiv = Styled.div`
 export const GamingHeadingDiv = Styled.div`
     width:100%;
     background-color:${props => (props.bgColor ? '#010101' : '#d7dfe9')};
-    height:15%;
+    height:10%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -36,7 +40,7 @@ export const GamingHeadingDiv = Styled.div`
 export const GamingIconDiv = Styled.div`
     background-color:${props => (props.bgColor ? '#d7dfe9' : 'lightcyan')};
     height:70%;
-    width:8%;
+    width:10%;
     display:flex;
     justify-content:center;
     flex-direction:column;
@@ -50,7 +54,7 @@ export const GamingH1 = Styled.h1`
     font-size:26px;
 `
 export const FailDiv = Styled.div`
-  height: 90vh;
+  height: 100%;
   width:100%;
   display: flex;
   justify-content: center;
@@ -89,34 +93,36 @@ export const GameDisplayDiv = Styled.ul`
     list-style-type:none;
     padding-left:0px;
     width:100%;
-    height:85%;
+    height:90%;
     padding:1%;
-    overflow-y:scroll;
+    overflow-y:auto;
     display:flex;
     justify-content:space-around;
     align-items:flex-start;
     flex-wrap:wrap;
+    margin:0px;
 `
 export const GameCard = Styled.div`
-    width:240px;
-    height:65%;
-    padding:1.5%;
+    width:100%;
+    height:100%;
+    padding:1%;
     margin-bottom:1.5%;
 `
 export const GameImg = Styled.img`
+    height:65%;
     width:100%;
-    height:80%;
+    background-size:cover;
 `
 export const Title = Styled.p`
     color:${props => (props.isDark ? '#f9f9f9' : '#010101')};
-    font-size:14px;
+    font-size:16px;
     font-weight:500;
     margin-bottom:2px;
     margin-top:2px;
 `
 export const Title1 = Styled.p`
     color: #475569;
-    font-size:14px;
+    font-size:12px;
     font-weight:500;
     margin:0px;
 `
