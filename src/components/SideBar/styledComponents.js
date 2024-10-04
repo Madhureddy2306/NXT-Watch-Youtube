@@ -43,23 +43,23 @@ export const CategoryItem = Styled.p`
     padding-left:2%;
 
     @media (max-width:600px){
-        font-size:10px;
+        font-size:12px;
     }
 
     @media (min-width:600px) and (max-width:780px){
-        font-size:14px;
+        font-size:17px;
     }
 
     @media (min-width:780px) and (max-width:960px){
-        font-size:16px;
+        font-size:20px;
     }
 
     @media (min-width:960px) and (max-width:1200px){
-        font-size:18px;
+        font-size:24px;
     }
 
     @media (min-width:1200px){
-        font-size:20px;
+        font-size:28px;
     }
 `
 export const ContactCard = Styled.div`
@@ -73,8 +73,13 @@ export const ContactCard = Styled.div`
     align-items:flex-start;
 `
 export const ContactPara = Styled(CategoryItem)`
-    font-size:14px;
+    font-size:1rem;
     font-weight:700;
+    margin:2%;
+
+    @media (max-width:700px){
+        font-size:0.8rem;
+    }
 `
 export const IconsDiv = Styled.div`
     width:70%;
@@ -84,6 +89,7 @@ export const IconsDiv = Styled.div`
     display:flex;
     justify-content:space-between;
     align-items:center;
+    margin-bottom:5%;
 
     @media (max-width:576px){
         width:100%;
@@ -94,6 +100,12 @@ export const IconLogo = Styled.img`
     height:75%;
 `
 export const ContactPara2 = Styled(ContactPara)`
-    font-size:14px;
+    font-size:0.9rem;
     font-weight:500;
+    margin:0px;
+    width:90%;
+
+    @media (max-width:700px){
+        font-size:0.8rem;
+    }
 `

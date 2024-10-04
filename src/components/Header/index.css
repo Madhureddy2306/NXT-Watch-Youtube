@@ -6,19 +6,18 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 1%;
-  padding-right: 1%;
   margin-bottom: 0px;
 }
 .header-page-dark {
   width: 100vw;
-  height: 10vh;
+  height: 10%;
   background-color: #181818;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1%;
+  margin-bottom: 0px;
 }
 .header-icon {
   width: 100%;
@@ -28,7 +27,7 @@
 .icon-profile-logout {
   list-style-type: none;
   padding-left: 0px;
-  width: 22%;
+  width: 23%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +42,7 @@
 .theme-btn {
   background-color: transparent;
   height: 50%;
-  width: 30%;
+  width: 35%;
   cursor: pointer;
   border-width: 0px;
   display: flex;
@@ -67,10 +66,12 @@
   border-radius: 5px;
   height: 35px;
   width: 75px;
-  border-width: 1px;
+  border-width: 3px;
   border-style: solid;
   border-color: #3b82f6;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 .logout-btn-dark {
   background-color: #181818;
@@ -78,10 +79,12 @@
   border-radius: 5px;
   height: 35px;
   width: 75px;
-  border-width: 2px;
+  border-width: 3px;
   border-style: solid;
   border-color: #ffffff;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 .link-item {
   text-decoration: none;
@@ -122,7 +125,7 @@
 .cancel {
   background-color: transparent;
   height: 30px;
-  border-width: 1px;
+  border-width: 1.5px;
   border-radius: 5px;
   color: #181818;
   cursor: pointer;
@@ -166,7 +169,7 @@
 .cancel-d {
   background-color: transparent;
   height: 30px;
-  border-width: 1px;
+  border-width: 1.5px;
   border-radius: 5px;
   color: #ffffff;
   cursor: pointer;
@@ -180,7 +183,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .icon-profile-logout {
     width: 45%;
   }
@@ -188,7 +191,103 @@
     width: 30%;
   }
   .theme-btn {
+    width: 25%;
+    height: 60%;
+  }
+  .logout-btn {
+    height: 30px;
+    width: 60px;
+  }
+  .logout-btn-dark {
+    height: 30px;
+    width: 60px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 790px) {
+  .icon-profile-logout {
+    width: 40%;
+  }
+  .link-item {
+    width: 25%;
+  }
+  .theme-btn {
     width: 20%;
-    height: 55%;
+    height: 30%;
+  }
+  .logout-btn {
+    height: 50px;
+    width: 120px;
+  }
+  .logout-btn-dark {
+    height: 50px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 980px) {
+  .icon-profile-logout {
+    width: 40%;
+  }
+  .link-item {
+    width: 25%;
+  }
+  .theme-btn {
+    width: 20%;
+    height: 30%;
+  }
+  .logout-btn {
+    height: 50px;
+    width: 120px;
+    font-size: 1.5rem;
+  }
+  .logout-btn-dark {
+    height: 50px;
+    width: 120px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1200px) {
+  .icon-profile-logout {
+    width: 40%;
+  }
+  .link-item {
+    width: 25%;
+  }
+  .theme-btn {
+    width: 15%;
+    height: 30%;
+  }
+  .logout-btn {
+    height: 4%;
+    width: 120px;
+  }
+  .logout-btn-dark {
+    height: 4%;
+    width: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .icon-profile-logout {
+    width: 40%;
+  }
+  .link-item {
+    width: 25%;
+  }
+  .theme-btn {
+    width: 15%;
+    height: 30%;
+  }
+  .logout-btn {
+    height: 4%;
+    width: 130px;
+    font-size: 1.5rem;
+  }
+  .logout-btn-dark {
+    height: 4%;
+    width: 130px;
+    font-size: 1.5rem;
   }
 }

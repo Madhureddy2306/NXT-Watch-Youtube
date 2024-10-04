@@ -2,13 +2,19 @@ import Styled from 'styled-components'
 
 export const VideoDetailsDiv = Styled.div`
     height:100vh;
+    width:100vw;
     background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
     font-family:"Roboto";
 `
 export const BottomDiv = Styled.div`
+    width:100%;
+    height:100%;
     display:flex;
     justify-content:flex-start;
-    background-color:red;
+    
+    @media (max-width:700px){
+        height:83%;
+    }
 `
 export const SideBarDiv = Styled.div`
     background-color:#f8f8f8;
@@ -118,6 +124,7 @@ export const Title = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};
     font-size:14px;
     font-weight:500;
+    margin:0px;
 `
 export const Title1 = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};
@@ -130,7 +137,8 @@ export const Flexer = Styled.div`
     background-color:transparent;
     width:100%;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    align-items:center;
 `
 export const Flexer1 = Styled.div`
     padding-left:2%;
@@ -141,9 +149,9 @@ export const Flexer1 = Styled.div`
 
 export const ViewsAndTime = Styled.div`
     height:25px;
-    width:25%;
+    width:50%;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items:center;
 `
 export const ChannelName = Styled.p`
@@ -172,7 +180,7 @@ export const ListTime = Styled.p`
 export const LikeDisLikeSaveDiv = Styled(ViewsAndTime)`
     justify-content:space-around;
     padding-left:0px;
-    width:28%;
+    width:50%;
 `
 export const IconBtn = Styled.button`
     height:25px;

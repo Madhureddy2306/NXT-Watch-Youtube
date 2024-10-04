@@ -15,5 +15,6 @@
 @media (min-width: 600px) and (max-width: 968px) {
   .link-me {
     width: 50%;
+    height: 30%;
   }
 }

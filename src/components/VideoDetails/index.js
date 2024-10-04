@@ -199,7 +199,12 @@ class VideoDetails extends Component {
 
     return (
       <>
-        <ReactPlayer url={videoUrl} controls width="100%" />
+        <ReactPlayer
+          url={videoUrl}
+          controls
+          width="100%"
+          className="react-player"
+        />
         <Title isDark={theme}>{title}</Title>
         <Flexer>
           <ViewsAndTime>

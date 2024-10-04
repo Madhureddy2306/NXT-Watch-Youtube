@@ -15,3 +15,9 @@
 .select-color {
   color: #ff0000;
 }
+
+@media (min-width: 700px) {
+  .link {
+    height: 8%;
+  }
+}

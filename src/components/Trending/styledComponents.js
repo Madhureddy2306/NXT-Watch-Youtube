@@ -11,6 +11,10 @@ export const BottomDiv = Styled.div`
     width:100%;
     display:flex;
     justify-content:flex-start;
+
+    @media (min-width:700px){
+        height:100%;
+    }
 `
 
 export const FailDiv = Styled.div`
@@ -51,7 +55,6 @@ export const RetryBtn = Styled.button`
 `
 export const VideoPlayerDiv = Styled.div`
     width:100%;
-    height:90vh;
     background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
 `
 export const RightBar = Styled.div`
@@ -74,14 +77,16 @@ export const TrendHeadingDiv = Styled.div`
 `
 export const TrendIconDiv = Styled.div`
     background-color:${props => (props.bgColor ? '#d7dfe9' : 'lightcyan')};
-    height:70%;
-    width:8%;
+    height:45px;
+    width:45px;
     display:flex;
     justify-content:center;
     flex-direction:column;
     align-items:center;
     border-radius:50%;
     margin-right:3%;
+    position:sticky;
+    top:0px;
 `
 
 export const TrendH1 = Styled.h1`
@@ -96,10 +101,11 @@ export const VideosDiv = Styled.ul`
     padding:2%;
     background-color:transparent;
     overflow-y:auto;
+    margin:0px;
 `
 export const VideoDiv = Styled.div`
     width:100%;
-    height:40%;
+    height:55%;
     display:flex;
     justify-content:space-evenly;
     align-items:center;
@@ -107,18 +113,18 @@ export const VideoDiv = Styled.div`
 `
 export const VideoImg = Styled.img`
     width:40%;
-    height:90%;
+    height:100%;
 `
 export const InfoDiv = Styled.div`
     width:50%;
-    height:90%;
+    height:100%;
     background-color:transparent;
     padding-left:1%;
     
 `
 export const ViewsAndTime = Styled.div`
     height:25px;
-    width:50%;
+    width:90%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -129,6 +135,11 @@ export const ChannelName = Styled.p`
     font-weight:500;
     margin-top:5px;
     margin-bottom:2px;
+
+    @media (max-width:700px){
+        font-size:0.8rem;
+        margin-top:0px;
+    }
 `
 export const ListTime = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#94a3b8')};
@@ -140,12 +151,13 @@ export const ListTime = Styled.p`
 `
 export const Title = Styled.p`
     color:${props => (props.isDark ? '#f9f9f9' : '#010101')};
-    font-size:14px;
+    font-size:15px;
     font-weight:500;
+    margin:0px;
 `
 export const Title1 = Styled.p`
     color:${props => (props.isDark ? '#f9f9f9' : '#010101')};
-    font-size:14px;
+    font-size:15px;
     font-weight:500;
     margin:0px;
 `

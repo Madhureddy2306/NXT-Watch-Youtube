@@ -58,6 +58,10 @@ export const BuyDiv = Styled.div`
 
 export const BannerLogo = Styled.img`
     width:35%;
+
+    @media (min-width:700px){
+        width:45%;
+    }
 `
 export const GetPara = Styled.p`
     color:#181818;
@@ -65,6 +69,10 @@ export const GetPara = Styled.p`
     font-weight:500;
     margin-bottom:5px;
     margin-top:5px;
+
+    @media (min-width:700px){
+        font-size:1rem;
+    }
 `
 export const GetBtn = Styled.button`
     height:30px;
@@ -75,6 +83,12 @@ export const GetBtn = Styled.button`
     color:#181818;
     font-size:10px;
     border-radius:10px;
+
+    @media (min-width:700px){
+        height:35px;
+        width:45%;
+        font-size:1rem;
+    }
 `
 
 export const SearchDiv = Styled.div`
@@ -116,6 +130,10 @@ export const SearchInput = Styled.input`
     outline:none;
     border-top-left-radius:8px;
     border-bottom-left-radius:8px;
+
+    @media (min-width:700px){
+        font-size:1rem;
+    }
 `
 export const IconBtn = Styled.button`
     width:15%;
