@@ -44,7 +44,7 @@ const categoriesList = [
   },
   {
     displayText: 'Saved',
-    optionId: 'saved videos',
+    optionId: 'saved Videos',
   },
 ]
 

@@ -4,7 +4,6 @@ export const SideBarDiv = Styled.div`
     background-color:#f8f8f8;
     width:25%;
     height:90vh;
-    background-color:blue;
 
     @media (max-width:700px){
         display:none;
@@ -33,7 +32,7 @@ export const ListItem = Styled.li`
     justify-content:flex-start;
     align-items:center;
     cursor:pointer;
-    margin-bottom:1%;
+    margin-bottom:1.5%;
 `
 export const CategoryItem = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#181818')};
@@ -43,23 +42,23 @@ export const CategoryItem = Styled.p`
     padding-left:2%;
 
     @media (max-width:600px){
-        font-size:12px;
+        font-size:15px;
     }
 
     @media (min-width:600px) and (max-width:780px){
-        font-size:17px;
-    }
-
-    @media (min-width:780px) and (max-width:960px){
         font-size:20px;
     }
 
+    @media (min-width:780px) and (max-width:960px){
+        font-size:25px;
+    }
+
     @media (min-width:960px) and (max-width:1200px){
-        font-size:24px;
+        font-size:30px;
     }
 
     @media (min-width:1200px){
-        font-size:28px;
+        font-size:35px;
     }
 `
 export const ContactCard = Styled.div`

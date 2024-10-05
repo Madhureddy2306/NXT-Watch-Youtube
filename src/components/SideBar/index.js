@@ -18,7 +18,7 @@ import './index.css'
 
 const SideBar = props => {
   const {isDarkTheme, selectedOption, categoriesList, getUrlText} = props
-  //    console.log(selectedOption === 'saved Videos')
+
   const iconCss = isDarkTheme ? 'yes' : ''
 
   const sendText = event => {

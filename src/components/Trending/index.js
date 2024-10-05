@@ -48,7 +48,7 @@ const categoriesList = [
   },
   {
     displayText: 'Saved',
-    optionId: 'saved videos',
+    optionId: 'saved Videos',
   },
 ]
 
@@ -190,7 +190,7 @@ class Trending extends Component {
                                     />
                                     <InfoDiv>
                                       <Title isDark={isDarkTheme}>
-                                        {each.title}
+                                        {each.title.slice(0, 30)}...
                                       </Title>
                                       <Title1 isDark={isDarkTheme}>
                                         {each.channel.name}

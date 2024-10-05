@@ -107,12 +107,13 @@ export const GameCard = Styled.div`
     width:100%;
     height:100%;
     padding:1%;
-    margin-bottom:1.5%;
+    margin-bottom:2%;
 `
 export const GameImg = Styled.img`
     height:75%;
     width:100%;
     background-size:cover;
+    margin:0px;
 `
 export const Title = Styled.p`
     color:${props => (props.isDark ? '#f9f9f9' : '#010101')};

@@ -1,4 +1,6 @@
 .category-icon {
+  height: 45%;
+  width: 20%;
   color: #475569;
 }
 .yes {
@@ -13,6 +15,8 @@
   height: 5%;
 }
 .select-color {
+  height: 45%;
+  width: 20%;
   color: #ff0000;
 }
 

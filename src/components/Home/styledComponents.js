@@ -15,7 +15,7 @@ export const BottomDiv = Styled.div`
     overflow:auto;
 
     @media (min-width:700px){
-        height:100%;
+        height:90%;
     }
 `
 
@@ -71,7 +71,7 @@ export const GetPara = Styled.p`
     margin-top:5px;
 
     @media (min-width:700px){
-        font-size:1rem;
+        font-size:1.5rem;
     }
 `
 export const GetBtn = Styled.button`
@@ -85,9 +85,9 @@ export const GetBtn = Styled.button`
     border-radius:10px;
 
     @media (min-width:700px){
-        height:35px;
-        width:45%;
-        font-size:1rem;
+        height:38px;
+        width:48%;
+        font-size:1.2rem;
     }
 `
 
@@ -153,14 +153,14 @@ export const IconBtn = Styled.button`
 export const VideosDiv = Styled.div`
     background-color:${props => (props.bgColor ? '#181818' : '#f8f8f8')};
     width:100%;
-    height:100%;
+    height:70%;
     flex-grow:1;
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
 `
 export const FailDiv = Styled.div`
-  height: 68%;
+  height: 100%;
   width:100%;
   display: flex;
   justify-content: center;
@@ -170,20 +170,29 @@ export const FailDiv = Styled.div`
   background-color:${props => (props.bgColor ? '#181818' : '#f8f8f8')};
 `
 export const FailImg = Styled.img`
-    width:30%;
+    width:65%;
     height:50%;
     margin-top:3%;
 `
 export const FailH1 = Styled.h1`
     color:${props => (props.isDark ? '#f8f8f8' : '#181818')};
-    font-size:28px;
+    font-size:35px;
     margin-top:5px;
     margin-bottom:5px;
+
+    @media (max-width:700px){
+        font-size:20px;
+    }
 `
 
 export const Failpara = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#181818')};
-    font-size:16px;
+    font-size:20px;
+    text-align:center;
+
+    @media (max-width:700px){
+        font-size:14px;
+    }
 `
 export const RetryBtn = Styled.button`
     background-color:#3b82f6;
@@ -194,4 +203,9 @@ export const RetryBtn = Styled.button`
     color:#f8f8f8;
     cursor:pointer;
     font-weight:500;
+
+    @media (min-width:700px){
+        height:50px;
+        width:120px;
+    }
 `

@@ -63,9 +63,9 @@ export const FailDiv = Styled.div`
   background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
 `
 export const FailImg = Styled.img`
-    width:40%;
+    width:90%;
     height:50%;
-    margin-top:3%;
+    margin:2%;
 `
 export const FailH1 = Styled.h1`
     color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};

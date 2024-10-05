@@ -51,7 +51,7 @@ const categoriesList = [
   },
   {
     displayText: 'Saved',
-    optionId: 'saved videos',
+    optionId: 'saved Videos',
   },
 ]
 
@@ -202,8 +202,9 @@ class VideoDetails extends Component {
         <ReactPlayer
           url={videoUrl}
           controls
-          width="100%"
-          className="react-player"
+          width="100"
+          height="40"
+          className="react-play"
         />
         <Title isDark={theme}>{title}</Title>
         <Flexer>

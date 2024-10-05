@@ -211,37 +211,37 @@ The app must has the following functionalities
     - If the **Dislike** button is already in the active state, then the **Dislike** button needs to be changed to the inactive state
   - When the **Dislike** button is clicked,
 
-    - It should change to active state
-    - If the **Like** button is already in the active state, then the **Like** button needs to be changed to the inactive state
+    - It will change to active state
+    - If the **Like** button is already in the active state, then the **Like** button will be changed to the inactive state
 
   - When the **Save** button is clicked,
-    - It should change to active state and the respective video details should be added to the list of saved videos
-    - **Save** button text should be changed to **Saved**
+    - It changes to active state and the respective video details should be added to the list of saved videos
+    - **Save** button text will be changed to **Saved**
   - When the **Saved** button is clicked
-    - It should change to inactive state and the respective video details will be removed from the list of saved videos
-    - **Saved** button text should be changed to **Save**
+    - It changes to inactive state and the respective video details are removed from the list of saved videos
+    - **Saved** button text will change to **Save**
 
 - **Saved Videos Route**
 
   - When an _authenticated_ user opens the Saved Videos Route,
-    - If the list of saved videos is empty, then the [No Saved Videos Found View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-light-theme-lg-output-v0.png) should be displayed
-    - The list of saved videos should be displayed
-  - When a **Video** is clicked, then the page should be navigated to the Video Item Details Route
-  - When the **Home** link in the Sidebar is clicked, then the page should be navigated to the Home Route
-  - When the **Trending** link in the Sidebar is clicked, then the page should be navigated to the Trending Route
-  - When the **Gaming** link in the Sidebar is clicked, then the page should be navigated to the Gaming Route
+    - If the list of saved videos is empty, then the [No Saved Videos Found View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-light-theme-lg-output-v0.png) will be displayed
+    - The list of saved videos will be displayed
+  - When a **Video** is clicked, then the page will be navigated to the Video Item Details Route
+  - When the **Home** link in the Sidebar is clicked, then the page will be navigated to the Home Route
+  - When the **Trending** link in the Sidebar is clicked, then the page will be navigated to the Trending Route
+  - When the **Gaming** link in the Sidebar is clicked, then the page will be navigated to the Gaming Route
 
 - **Not Found Route**
 
-  - When a random path is provided as the URL path, then the page should be navigated to the Not Found Route
+  - When a random path is provided as the URL path, then the page will be navigated to the Not Found Route
 
 - **Header**
 
-  - When the Website logo is clicked, then the page should be navigated to the Home Route
-  - When the theme icon button is clicked, then the theme should be changed accordingly
-  - When the **Logout** button is clicked, then the [Logout Popup](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-light-theme-lg-output-v0.png) should be displayed
-    - When the **Cancel** button is clicked, then the popup should be closed and the page should not be navigated
-    - When the **Confirm** button is clicked, then the page should be navigated to the Login Route
+  - When the Website logo is clicked, then the page will be navigated to the Home Route
+  - When the theme icon button is clicked, then the theme will be changed accordingly
+  - When the **Logout** button is clicked, then the [Logout Popup](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-light-theme-lg-output-v0.png) is displayed
+    - When the **Cancel** button is clicked, then the popup will be closed
+    - When the **Confirm** button is clicked, then the page will be navigated to the Login Route
 
 </details>
 
@@ -409,123 +409,6 @@ Returns a response containing the details of a specific video
   }
 }
 ```
-
-</details>
-
-### Quick Tips
-
-<details>
-<summary>Click to view</summary>
-<br>
-
-- To build this project, take a look at the <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b01fca1c-aa5c-4d79-b81e-0220e7649bd0&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Popup</a> and <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b6392b63-25f6-4215-be09-9f23ad91d789&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Video Player</a> reading materials
-
-- To style popup content use `.popup-content` class
-
-```jsx
-<Popup
-  modal
-  trigger={
-    //write code here
-  }
-  className="popup-content"
->
-  //write code here
-</Popup>
-```
-
-- Use `formatDistanceToNow` function to find the difference between the given date and now in words
-
-```jsx
-import {formatDistanceToNow} from 'date-fns'
-console.log(formatDistanceToNow(new Date(2021, 8, 20)))
-// Return the distance between the given date and now in words.
-```
-
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- Render `Home` Route component when the path in URL matches `/`
-- Render `Login` Route component when the path in URL matches `/login`
-- Render `Trending` Route component when the path in URL matches `/trending`
-- Render `Gaming` Route component when the path in URL matches `/gaming`
-- Render `Saved Videos` Route component when the path in URL matches `/saved-videos`
-- Render `Video Item Details` Route component when the path in URL matches `/videos/:id`
-- Render `Not Found` Route component when the path in URL matches `/not-found`
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js`
-- User credentials
-
-  ```text
-   username: rahul
-   password: rahul@2021
-
-  ```
-
-- Wrap the `Loader` component with an HTML container element and add the `data-testid` attribute value as **loader** to it
-
-  ```jsx
-  <div className="loader-container" data-testid="loader">
-    <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
-  </div>
-  ```
-
-- The HTML button element with search icon in Home Route should have the `data-testid` attribute value as **searchButton** to it
-
-- **Styled Components** should be used for styling purposes
-- The theme icon button should have the `data-testid` as **theme**
-- The video thumbnail images in the Routes should have the alt as **video thumbnail**
-- The channel logos in Home Route should have the alt as **channel logo**
-
-- **Home Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **home**
-  - The Route should consist of a banner and it contains a close button with `data-testid` as **close**
-  - The Route should consist of a banner as shown in the design files with `data-testid` as **banner**
-  - The Route should consist of an HTML image element with alt as **nxt watch logo** and src as the given Nxt Watch logo URL in the banner
-  - The HTML container element with `data-testid` as **home** should have the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#181818** color should be applied as a background color
-
-- **Trending Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **trending**
-  - The HTML container element with `data-testid` as **trending** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Gaming Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **gaming**
-  - The HTML container element with `data-testid` as **gaming** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Saved Videos Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **savedVideos**
-  - The HTML container element with `data-testid` as **savedVideos** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Video Item Details Route**
-
-  - The **Video Item Details** Route should consist of an HTML container element with `data-testid` as **videoItemDetails**
-  - The HTML container element with `data-testid` as **videoItemDetails** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- The **Website logos** for Light theme and Dark theme should have the alt as **website logo**
-- The **Failure** images for Light theme and Dark theme should have the alt as **failure view**
-- In the Video Item Details Route, the **#2563eb** color should be applied as `color` for any active button i.e (Like, Dislike, Save)
-- In the Video Item Details Route, the **#64748b** color should be applied as `color` for any inactive button i.e (Like, Dislike, Save)
 
 </details>
 

@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 1%;
+  padding-right: 1%;
   margin-bottom: 0px;
 }
 .header-page-dark {
@@ -17,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 1%;
+  padding-right: 1%;
   margin-bottom: 0px;
 }
 .header-icon {
@@ -34,15 +36,26 @@
   margin: 0px;
 }
 .moon-icon {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 85%;
   color: #181818;
   font-weight: 600;
 }
 .theme-btn {
   background-color: transparent;
-  height: 50%;
-  width: 35%;
+  height: 40%;
+  width: 25%;
+  cursor: pointer;
+  border-width: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.theme-btn-profile {
+  background-color: transparent;
+  height: 40%;
+  width: 15%;
   cursor: pointer;
   border-width: 0px;
   display: flex;
@@ -66,7 +79,7 @@
   border-radius: 5px;
   height: 35px;
   width: 75px;
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   border-color: #3b82f6;
   cursor: pointer;
@@ -78,8 +91,8 @@
   color: #ffffff;
   border-radius: 5px;
   height: 35px;
-  width: 75px;
-  border-width: 3px;
+  width: 72px;
+  border-width: 2px;
   border-style: solid;
   border-color: #ffffff;
   cursor: pointer;
@@ -182,46 +195,60 @@
   color: #181818;
   cursor: pointer;
 }
+.saved-icon {
+  color: #000000;
+  height: 100%;
+  width: 100%;
+}
+.saved-icon:hover {
+  background-color: red;
+}
+.white {
+  color: #ffffff;
+}
 
 @media (max-width: 600px) {
   .icon-profile-logout {
     width: 45%;
   }
+  .theme-btn-profile {
+    display: none;
+  }
   .link-item {
     width: 30%;
   }
-  .theme-btn {
-    width: 25%;
-    height: 60%;
-  }
   .logout-btn {
     height: 30px;
-    width: 60px;
+    width: 58px;
   }
   .logout-btn-dark {
     height: 30px;
-    width: 60px;
+    width: 58px;
   }
 }
 
 @media (min-width: 600px) and (max-width: 790px) {
   .icon-profile-logout {
-    width: 40%;
+    width: 45%;
   }
   .link-item {
     width: 25%;
   }
   .theme-btn {
-    width: 20%;
-    height: 30%;
+    width: 18%;
+    height: 25%;
+  }
+  .theme-btn-profile {
+    width: 18%;
+    height: 25%;
   }
   .logout-btn {
     height: 50px;
-    width: 120px;
+    width: 115px;
   }
   .logout-btn-dark {
     height: 50px;
-    width: 120px;
+    width: 115px;
   }
 }
 
@@ -238,12 +265,12 @@
   }
   .logout-btn {
     height: 50px;
-    width: 120px;
+    width: 115px;
     font-size: 1.5rem;
   }
   .logout-btn-dark {
     height: 50px;
-    width: 120px;
+    width: 115px;
     font-size: 1.5rem;
   }
 }
@@ -261,11 +288,11 @@
   }
   .logout-btn {
     height: 4%;
-    width: 120px;
+    width: 118px;
   }
   .logout-btn-dark {
     height: 4%;
-    width: 120px;
+    width: 118px;
   }
 }
 
@@ -282,12 +309,12 @@
   }
   .logout-btn {
     height: 4%;
-    width: 130px;
+    width: 120px;
     font-size: 1.5rem;
   }
   .logout-btn-dark {
     height: 4%;
-    width: 130px;
+    width: 120px;
     font-size: 1.5rem;
   }
 }

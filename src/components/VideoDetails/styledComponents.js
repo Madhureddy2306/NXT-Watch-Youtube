@@ -16,69 +16,7 @@ export const BottomDiv = Styled.div`
         height:83%;
     }
 `
-export const SideBarDiv = Styled.div`
-    background-color:#f8f8f8;
-    width:24%;
-    height:90vh;
-`
-export const CategoriesDiv = Styled.div`
-    background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
-    width:100%;
-    height:70%;
-    display:flex;
-    justify-content:flex-start;
-    flex-direction:column;
-    align-items:flex-start;
-    padding:2px;
-`
-export const ListItem = Styled.p`
-    list-style-type:none;
-    padding-left:5px;
-    width:100%;
-    height:30px;
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    cursor:pointer;
-    margin-bottom:2%;
-`
-export const CategoryItem = Styled.p`
-    color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};
-    font-size:14px;
-    font-weight:600;
-    margin-left:5%;
-`
-export const ContactCard = Styled.div`
-    background-color:${props => (props.bgColor ? '#0f0f0f' : '#f8f8f8')};
-    width:100%;
-    height:30%;
-    padding:2%;
-    display:flex;
-    justify-content:flex-start;
-    flex-direction:column;
-    align-items:flex-start;
-`
-export const ContactPara = Styled(CategoryItem)`
-    font-size:14px;
-    font-weight:700;
-`
-export const IconsDiv = Styled.div`
-    width:70%;
-    margin-left:3%;
-    background-color:transparent;
-    height:25%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-`
-export const IconLogo = Styled.img`
-    width:25%;
-    height:75%;
-`
-export const ContactPara2 = Styled(ContactPara)`
-    font-size:14px;
-    font-weight:500;
-`
+
 export const VideoPlayerDiv = Styled.div`
     width:100%;
     padding:1%;
@@ -122,9 +60,21 @@ export const RetryBtn = Styled.button`
 `
 export const Title = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};
-    font-size:14px;
+    font-size:40px;
     font-weight:500;
-    margin:0px;
+    margin-bottom:2%;
+    margin-top:0px;
+
+    
+    @media (max-width:700px){
+        font-size:1rem;
+    }
+    @media (min-width:700px) and (max-width:980px){
+        font-size:1.5rem;
+    }
+    @media (min-width:981px) and (max-width:1200px){
+        font-size:2.2rem;
+    }
 `
 export const Title1 = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#0f0f0f')};

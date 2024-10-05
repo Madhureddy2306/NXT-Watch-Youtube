@@ -2,6 +2,8 @@ import {Link, withRouter} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Popup from 'reactjs-popup'
 import {BiSun} from 'react-icons/bi'
+import {FaMoon} from 'react-icons/fa'
+import {IoMenu} from 'react-icons/io5'
 import ThemeContext from '../../ThemeContext'
 import './index.css'
 
@@ -9,6 +11,8 @@ const Header = props => (
   <ThemeContext.Consumer>
     {value => {
       const {isDarkTheme, updateTheme} = value
+
+      const iconColor = isDarkTheme ? 'white' : ''
 
       const logout = () => {
         const {history} = props
@@ -41,13 +45,16 @@ const Header = props => (
                 >
                   <BiSun className="moon-icon-dark" />
                 </button>
-                <button type="button" className="theme-btn">
+                <button type="button" className="theme-btn-profile">
                   <img
                     src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"
                     alt="profile"
                     className="profile"
                   />
                 </button>
+                <Link to="/saved-videos" className="theme-btn">
+                  <IoMenu className={`saved-icon ${iconColor}`} />
+                </Link>
                 <div className="popup-div-d">
                   <Popup
                     modal
@@ -103,15 +110,18 @@ const Header = props => (
                   onClick={changeTheme}
                   data-testid="theme"
                 >
-                  <BiSun className="moon-icon" />
+                  <FaMoon className="moon-icon" />
                 </button>
-                <button type="button" className="theme-btn">
+                <button type="button" className="theme-btn-profile">
                   <img
                     src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"
                     alt="profile"
                     className="profile"
                   />
                 </button>
+                <Link to="/saved-videos" className="theme-btn">
+                  <IoMenu className={`saved-icon ${iconColor}`} />
+                </Link>
                 <div className="popup-div">
                   <Popup
                     modal

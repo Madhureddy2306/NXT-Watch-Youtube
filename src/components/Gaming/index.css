@@ -14,3 +14,10 @@
 .select-color {
   color: #ff0000;
 }
+
+@media (min-width: 700px) {
+  .link-style {
+    width: 50%;
+    height: 28%;
+  }
+}

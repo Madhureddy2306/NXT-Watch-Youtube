@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom'
 import {AiFillHome} from 'react-icons/ai'
-import {RiMenuAddFill} from 'react-icons/ri'
 import {SiYoutubegaming} from 'react-icons/si'
 import {HiFire} from 'react-icons/hi'
 import {MobileBarDiv, NavListItem, NavCategoryItem} from './styledComponents'
@@ -81,28 +80,6 @@ const MobileNavBar = props => {
             onClick={sendTextId}
           >
             {categoriesList[2].displayText}
-          </NavCategoryItem>
-        </NavListItem>
-      </Link>
-      <Link to="/saved-videos" className="link-nav">
-        <NavListItem
-          className={
-            selectedOption === categoriesList[3].optionId ? 'bg-nav' : ''
-          }
-        >
-          <RiMenuAddFill
-            className={
-              selectedOption === categoriesList[3].optionId
-                ? 'select-color-nav'
-                : `category-icon-nav ${iconCss}`
-            }
-          />
-          <NavCategoryItem
-            id={categoriesList[3].optionId}
-            isDark={isDarkTheme}
-            onClick={sendTextId}
-          >
-            {categoriesList[3].displayText}
           </NavCategoryItem>
         </NavListItem>
       </Link>
