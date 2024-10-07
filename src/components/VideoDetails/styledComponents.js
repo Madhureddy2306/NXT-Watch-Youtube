@@ -69,10 +69,10 @@ export const Title = Styled.p`
     @media (max-width:700px){
         font-size:1rem;
     }
-    @media (min-width:700px) and (max-width:980px){
+    @media (min-width:701px) and (max-width:920px){
         font-size:1.5rem;
     }
-    @media (min-width:981px) and (max-width:1200px){
+    @media (min-width:921px) and (max-width:1200px){
         font-size:2.2rem;
     }
 `
@@ -86,30 +86,56 @@ export const Title1 = Styled.p`
 export const Flexer = Styled.div`
     background-color:transparent;
     width:100%;
+    height:5%;
     display:flex;
     justify-content:space-evenly;
     align-items:center;
+
+
+    /*
+    @media (max-width:700px){
+        font-size:1rem;
+    }
+    @media (min-width:701px) and (max-width:920px){
+        font-size:1.5rem;
+    }
+    @media (min-width:921px) and (max-width:1200px){
+        font-size:2.2rem;
+    }
+    */
 `
 export const Flexer1 = Styled.div`
     padding-left:2%;
     width:50%;
+    height:10%;
     display:flex;
     justify-content:space-between;
 `
 
 export const ViewsAndTime = Styled.div`
-    height:25px;
-    width:50%;
+    width:40%;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:center;
 `
+
 export const ChannelName = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#94a3b8')};
     font-size:14px;
-    margin-top:5px;
-    margin-bottom:2px;
-    margin-right:2px;
+    margin:0px;
+
+    @media (max-width:700px){
+        font-size:14px;
+    }
+    @media (min-width:701px) and (max-width:920px){
+        font-size:18px;
+    }
+    @media (min-width:921px) and (max-width:1200px){
+        font-size:18px;
+    }
+    @media (min-width:1201px){
+        font-size:20px;
+    }
 `
 export const ChannelName1 = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#94a3b8')};
@@ -117,30 +143,70 @@ export const ChannelName1 = Styled.p`
     margin-top:0px;
     margin-bottom:2px;
     margin-right:2px;
-    margin-left:2%;
+
+    @media (max-width:700px){
+        font-size:14px;
+    }
+    @media (min-width:701px) and (max-width:920px){
+        font-size:18px;
+    }
+    @media (min-width:921px) and (max-width:1200px){
+        font-size:18px;
+    }
+    @media (min-width:1201px){
+        font-size:20px;
+    }
 `
 
 export const ListTime = Styled.p`
     color:${props => (props.isDark ? '#f8f8f8' : '#94a3b8')};
     font-size:14px;
-    margin-top:5px;
-    margin-bottom:2px;
-    padding-left:0px;
+    margin:0px;
+
+    @media (max-width:700px){
+        font-size:14px;
+    }
+    @media (min-width:701px) and (max-width:920px){
+        font-size:18px;
+    }
+    @media (min-width:921px) and (max-width:1200px){
+        font-size:18px;
+    }
+    @media (min-width:1201px){
+        font-size:20px;
+    }
 `
 export const LikeDisLikeSaveDiv = Styled(ViewsAndTime)`
-    justify-content:space-around;
+    justify-content:space-between;
     padding-left:0px;
-    width:50%;
+    width:60%;
 `
 export const IconBtn = Styled.button`
-    height:25px;
+    height:45px;
+    width:45px;
     padding-left:0px;
     border-width:0px;
     display:flex;
-    justify-content:flex-start;
+    justify-content:center;
     align-items:center;
     cursor:pointer;
-    background-color:transparent;
+    background-color:lightgrey;
+    border-radius:50%;
+
+
+    @media (max-width:700px){
+        font-size:14px;
+    }
+    @media (min-width:701px) and (max-width:920px){
+        font-size:18px;
+    }
+    @media (min-width:921px) and (max-width:1200px){
+        font-size:18px;
+    }
+    @media (min-width:1201px){
+        font-size:20px;
+    }
+    
 `
 export const Like = Styled.p`
     font-size:12px;
@@ -148,6 +214,19 @@ export const Like = Styled.p`
     margin:0px;
     font-weight:600;
     margin-left:0px;
+
+    @media (max-width:700px){
+        font-size:14px;
+    }
+    @media (min-width:701px) and (max-width:920px){
+        font-size:18px;
+    }
+    @media (min-width:921px) and (max-width:1200px){
+        font-size:18px;
+    }
+    @media (min-width:1201px){
+        font-size:20px;
+    }
 `
 export const HrLine = Styled.hr`
     width:100%;
@@ -159,27 +238,44 @@ export const IconAndTitle = Styled.div`
     display:flex;
     justify-content:flex-start;
     align-items:flex-start;
+    height:10%;
 `
 export const ChannelImg = Styled.img`
-    width:10%;
-    height:30px;
+    width:15%;
+    height:90%;
     border-radius:5%;
     margin-right:1%;
     margin-top:2%;
+    :hover{
+        background-color:red;
+    }
 `
 export const NameSubscribers = Styled.div`
-    background-color:transparent;
-    width:90%;
+    background-color:red;
+    width:85%;
+    height:10%;
     display:flex;
     justify-content:center;
     flex-direction:column;
 `
 export const DescP = Styled.p`
-    color:${props => (props.isDark ? '#f8f8f8' : '#101010')};
+    color:${props => (props.isDark ? '#f8f8f8' : '#94a3b8')};
     font-size:12px;
     font-weight:500;
     width:85%;
     margin:auto;
     text-align:left;
-    margin-top:2%;
+
+    @media (max-width:700px){
+        font-size:14px;
+    }
+    @media (min-width:701px) and (max-width:920px){
+        font-size:18px;
+    }
+    @media (min-width:921px) and (max-width:1200px){
+        font-size:18px;
+    }
+    @media (min-width:1201px){
+        font-size:20px;
+    }
 `

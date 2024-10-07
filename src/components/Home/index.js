@@ -143,7 +143,6 @@ class Home extends Component {
   }
 
   getUrlText = event => {
-    console.log(event.target.id)
     this.setState({selectedOption: event.target.id})
   }
 

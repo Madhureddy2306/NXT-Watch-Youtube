@@ -68,7 +68,7 @@ const Header = props => (
                       <>
                         <div className="pop-card-d">
                           <p className="pop-pd">
-                            Are you sure, you want to logout
+                            Are you sure, you want to logout?
                           </p>
                           <div className="flex">
                             <button

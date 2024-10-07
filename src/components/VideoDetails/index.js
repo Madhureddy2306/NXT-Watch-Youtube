@@ -191,7 +191,6 @@ class VideoDetails extends Component {
     }
 
     const savedClass = !idList.includes(id) ? 'save' : ''
-    console.log(idList.includes(id))
 
     const likesVal = activeId === 'like'
     const disLikesVal = activeId === 'dislike'
@@ -252,7 +251,6 @@ class VideoDetails extends Component {
 
   render() {
     const {requestFailed, isLoading, activeOption, videoInfo} = this.state
-    console.log(activeOption)
 
     return (
       <ThemeContext.Consumer>
